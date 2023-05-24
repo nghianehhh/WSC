@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en"> 
+
+<head> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WSC</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body> 
+    <section id="header"> 
+        <a href="#"><img src="img/images.png" class="logo" alt=""></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="../../index.html">Trang chủ</a></li>
+                <li><a class="active" href="./shop.html">Sản phẩm</a></li>
+                <li><a href="../footer/blog.html">Blog</a></li>
+                <li><a href="../footer/introduction.html">About</a></li>
+                <li><a href="../footer/lienhe.html">Liên hệ</a></li>
+                <li><a href="../cart/shopping-bag.html"><i class="fa fa-shopping-bag"></i></a></li>
+                <li><a href="../Account/Account.html"><i class="fa fa-user"></i></a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="prodetails" class="section-p1">
+        <div class="single-pro-img">
+            <img src="img/vest1.jpg" width="694px" id="mainimg" alt="">
+        </div>
+        <div class="small-img-group">
+            <div class="small-img-col"> 
+                <img src="img/vest2.jpg" onclick="show()" width="170px" class="small-img"alt="">
+            </div>
+
+            <div class="small-img-col">
+                <img src="img/vest3.jpg" width="170px" class="small-img"alt="">
+            </div>
+
+            <div class="small-img-col">
+                <img src="img/vest4.jpg" width="170px" class="small-img"alt="">
+            </div>
+
+            <div class="small-img-col">
+                <img src="img/vest1.jpg" width="170px" class="small-img"alt="">
+            </div>
+        </div>
+        <div class="single-pro-details">
+            <h6>Home / skirt</h6>
+            <h4>Fashion skirt</h4>
+            <h2>$999</h2>
+            <select>
+                <option>Select Size</option>
+                <option>S</option>
+                <option>M</option>
+                <option>L</option>
+                <option>XL</option>
+                <option>XXL</option>
+            </select>
+            <input type="number" value="1">
+            <button class="normal">Add to cash</button>
+            <h4>Product Details</h4>
+            <span>In modern times, skirts are very commonly worn by women and girls. 
+                Some exceptions include the izaar, worn by many Muslim cultures, and the kilt,
+                a traditional men's garment in Scotland, Ireland, and sometimes England.
+                Fashion designers such as Jean Paul Gaultier, Vivienne Westwood, Kenzo and Marc
+                Jacobs have also shown men's skirts. </span>
+        </div>
+    </section>
+
+    <section id="newsletter" class="section-p1 section-m1">
+        <div class="newstext">
+            <h4>Sign Up For Newsletters</h4>
+            <p>Get Gmail updates about our latest shop and <span>special offers.</span>
+            </p>
+        </div>
+        <div class="form">
+            <input type="text" placeholder="Your gmail address">
+            <button class="normal">Sign Up</button>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="infor">
+            <div class="col">
+                <a href="#"><img class="logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgPr7HSoQqMTNMjQ5EuYk1ln_uiTXvnUT30c6zxa4F5K5qRSLfb9eftUyu1-vyWdx8YK8&usqp=CAU" alt=""></a>
+                <p id="ten">Contact</p>
+                <p> <strong>Address: </strong> Ktx khu  A</p>
+                <p> <strong>Phone:</strong> +01 222 356</p>
+                <p> <strong>Hours:</strong> 10:00 - 18:00 , Mon - Sat</p>
+                <div class="follow">
+                     <p id="ten">Follow us</p>
+                     <div class="icon">
+                           <i class="fab fa-facebook" aria-hidden="true"></i>
+                           <i class="fab fa-twitter" aria-hidden="true"></i>
+                           <i class="fab fa-instagram" aria-hidden="true"></i>
+                           <i class="fab fa-youtube" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <p id="ten">Thông tin Shop</p>
+                <a href="#">Giới thiệu WSC</a>
+                <a href="#">Tuyển dụng</a>
+                <a href="#">Blogger thời trang</a>
+            </div>
+
+            <div class="col">
+                <p id="ten">Trung tâm hỗ trợ </p>
+                <a href="#">Thông tin vận chuyển</a>
+                <a href="#">Hướng dẫn đổi trả</a>
+                <a href="#">Hướng dẫn đặt hàng</a>
+                <a href="#">Làm thế nào để theo dõi</a>
+            </div>
+
+            <div class="col">
+                <p id="ten">Dịch vụ khách hàng</p>
+                <a href="#">Liên hệ chúng tôi</a>
+                <a href="#">Phương thức thanh toán</a>
+                <a href="#">Điểm thưởng</a>
+                <a href="#">Trung tâm dùng thử miễn phí</a>
+            </div>
+            
+            <div class="coppyright">
+                <p>2022 | WSC All Rights</p>
+            </div>
+    
+        </div>
+    </footer>
+
+    <script>
+        
+            var mainimg = document.getElementById("mainimg");
+            var smallimg = document.getElementsByClassName("small-img");
+
+        smallimg[0].onclick = function(){
+            mainimg.src = smallimg[0].src;
+        }
+        smallimg[1].onclick = function(){
+            mainimg.src = smallimg[1].src;
+        }
+        smallimg[2].onclick = function(){
+            mainimg.src = smallimg[2].src;
+        }
+        smallimg[3].onclick = function(){
+            mainimg.src = smallimg[3].src;
+        } 
+        
+
+    </script>
+<!-- 
+    <script> 
+        function show() { let image = document.getElementById("mainimg");
+            image.src ="https://i.pinimg.com/originals/a8/eb/85/a8eb8556e43229c6868d94ee669d7c9d.jpg";
+        }
+    
+    </script>  -->
+
+        
+    </html>
+
+</body>

@@ -1,0 +1,138 @@
+@import url(https://fonts.google.com/specimen/League+Spartan?query=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap);
+body {
+    /* background-image: linear-gradient(135deg, #FAB2FF 10%, #1904E5 100%); */
+    background-size: cover;
+    margin:0px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: "Open Sans", sans-serif;
+    color: #333333;
+    height: 500px;
+   
+    
+  }
+  #header {
+    top:0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px;
+    background: #E3E6F3;
+    position: sticky;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.06);
+    height: 40px;
+}
+#navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+#navbar li {
+  list-style: none;
+  padding: 0 20px;
+  position: relative;
+  cursor: pointer;
+}
+
+#navbar li a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: #1a1a1a;
+  transition: 0.3s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+  color: #088178;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after{
+  content: "";
+  width: 30%;
+  height: 2px;
+  background: #088178;
+  position: absolute;
+  bottom: -4px;
+  left: 20px;
+}
+
+/* body */
+div.main-policy.main-complaints.main-rules {
+
+    margin: 100px;
+
+}
+
+
+
+
+
+ /* -----------------   footer------------------- */
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+    height: auto;
+    margin-top: 40px;
+
+  }
+  .infor{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px;
+  }
+  footer .col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }
+  footer .logo{
+    margin-bottom: 30px;
+    height:30px ;
+    width:40px ;
+  }
+  .logo{
+    height:30px ;
+    width:40px ;
+  }
+  #ten{
+    font-size: 14px;
+    padding-bottom: 20px;
+    font-weight: bold;
+  }
+
+  footer p{
+    font-size: 13px;
+    margin: 0 0 8px 0;
+  }
+  footer a{
+    font-size: 13px;
+    text-decoration: none;
+    color: #222;
+    margin-bottom: 10px;
+  }
+
+  footer .follow i {
+    color: #465b52;
+    padding-right: 4px;
+    cursor: pointer;
+  }
+
+  footer .follow i:hover,
+  footer a:hover{
+    color:#088178;
+  }
+
+  footer .coppyright{
+    width: 100%;
+    text-align: center;
+  }
